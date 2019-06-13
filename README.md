@@ -4,6 +4,8 @@ De-corp
 A simple slackbot for responding to messages which contain `b.corp.google.com/issues/NNNN` links
 with the corresponding `issuetracker.google.com/issues/NNNN` link.
 
+Forked from https://github.com/sjmelia/regexbot
+
 
 Setup
 -----
