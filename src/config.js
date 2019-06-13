@@ -4,9 +4,6 @@ var config = {
   regexes: [
     { regex: /https:\/\/b\.corp\.google\.com\/issues\/(\d+)#([^ >]+)/g, message: 'Public link: https://issuetracker.google.com/issues/[1]#[2]' },
     { regex: /https:\/\/b\.corp\.google\.com\/issues\/(\d+)/g, message: 'Public link: https://issuetracker.google.com/issues/[1]' }
-  ],
-
-  schedules: [],
-  build: function (id) {}
+  ]
 };
 module.exports = config;
