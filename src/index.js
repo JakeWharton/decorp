@@ -51,6 +51,3 @@ function postMessage (options) {
     });
 }
 
-var scheduler = require('./schedule.js');
-var poster = function (channel, msg) { postMessage({ channel: channel, text: msg, as_user: true }); };
-scheduler(config.schedules, poster);

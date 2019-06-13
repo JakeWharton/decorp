@@ -1,13 +1,11 @@
 {
-  "name": "regexbot",
+  "name": "decorp",
   "version": "1.0.0",
-  "description": "Regular expression responder for slack",
-  "repository": "https://github.com/sjmelia/regexbot",
+  "description": "Post public version of b.corp issue links sent to Slack",
+  "repository": "https://github.com/JakeWharton/decorp",
   "main": "src/index.js",
   "dependencies": {
-    "@slack/client": "^4.8.0",
-    "jira-client": "^4.2.0",
-    "node-schedule": "^1.2.0"
+    "@slack/client": "^4.8.0"
   },
   "devDependencies": {
     "@slack/events-api": "^2.1.1",
@@ -24,6 +22,6 @@
     "start": "node src/index.js",
     "test": "eslint src && mocha"
   },
-  "author": "Steve Melia",
+  "author": "Jake Wharton",
   "license": "MIT"
 }
