@@ -17,6 +17,15 @@ describe('Regexbot', function () {
     assert.equal(reply, 'Public link: https://issuetracker.google.com/issues/135190668');
   });
 
+  it('should handle buganizer.corp link', function () {
+    var reply = '';
+
+    regexbot.respond('check out https://buganizer.corp.google.com/issues/135190668', function (txt) {
+      reply = txt;
+    });
+    assert.equal(reply, 'Public link: https://issuetracker.google.com/issues/135190668');
+  });
+
   it('should handle b.corp links with URL fragments', function () {
     var reply = '';
     regexbot.respond('check out https://b.corp.google.com/issues/135190668#comment1', function (txt) {
